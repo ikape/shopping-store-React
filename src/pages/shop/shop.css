@@ -1,5 +1,6 @@
-*{
+body{
     box-sizing: border-box;
+    max-width: 100%;
 }
 
 .shopTitle {
@@ -9,10 +10,11 @@
 }
 
 .products {
-    width: 100%;
+    /* width: 100%; */
     height: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-columns:  1fr 1fr 1fr; */
+    grid-template-columns: repeat(minmax(300px, 3fr));
     place-items: center;
 }
 
@@ -28,7 +30,8 @@
 }
 
 .product img {
-    width: 400px;
+    /* width: 400px; */
+    width: 100%;
 }
 
 .product .description {
